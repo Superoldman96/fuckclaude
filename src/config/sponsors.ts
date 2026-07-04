@@ -64,5 +64,25 @@ export const SPONSORS: Sponsor[] = [
       zh: '免费使用',
       en: 'Use for free',
     },
+  },
+  {
+    id: 'geek2api',
+    name: 'Geek2API',
+    url: 'https://hk.geek2api.com?ref=fuckclaude',
+    logo: '/sponsors/geek2api-wordmark-340x108.jpg',
+    logoWidth: 340,
+    logoHeight: 108,
+    headline: {
+      zh: '高校企业都在选择的超低倍率中转站。',
+      en: 'The ultra-low-rate AI gateway universities & enterprises pick.',
+    },
+    tagline: {
+      zh: 'Claude / GPT / Gemini / Image2 全模型接入，可开发票',
+      en: 'Full Claude / GPT / Gemini / Image2 access, invoices available',
+    },
+    cta: {
+      zh: '立即体验',
+      en: 'Try it now',
+    },
   }
 ];
