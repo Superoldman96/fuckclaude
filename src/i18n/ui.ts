@@ -31,6 +31,15 @@ export const ui = {
     'news.backHome': '← Back to Home',
     'news.viewAll': 'View all news',
     'news.source': 'Source',
+
+    'community.title': 'Community Anti-Ban Field Reports',
+    'community.sub':
+      'Real-world tips from X (Twitter) on Claude bans, appeals, payments, and Claude Code — curated with direct links to original posts.',
+    'community.viewAll': 'View all field reports',
+    'community.takeaway': 'Takeaway:',
+    'community.viewOnX': 'View original on X (Twitter)',
+    'community.externalHint': 'Opens external link in a new tab',
+
     'credit': 'Built with Claude Fable 5',
 
     'guides.title': 'Claude Anti-Ban & Safety Knowledge Base',
@@ -270,6 +279,15 @@ export const ui = {
     'news.backHome': '← 返回首页',
     'news.viewAll': '查看全部动态',
     'news.source': '来源',
+
+    'community.title': '社区防封实战精选',
+    'community.sub':
+      '来自 X (Twitter) 的 Claude 封号、申诉、支付与 Claude Code 第一手经验，附原文直达链接与实战避坑提炼。',
+    'community.viewAll': '查看全部实战帖',
+    'community.takeaway': '实战要点：',
+    'community.viewOnX': '在 X (Twitter) 查看原文',
+    'community.externalHint': '将在新标签页打开外部链接',
+
     'credit': '此网站使用 Claude Fable 5 开发',
 
     'guides.title': 'Claude 防封避坑与环境纯化资料库',

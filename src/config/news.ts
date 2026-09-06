@@ -26,6 +26,66 @@ export const NEWS_CATEGORIES: Record<NewsCategory, { en: string; zh: string }> =
 
 export const CLAUDE_NEWS: NewsItem[] = [
   {
+    id: 'anthropic-transparency-report-h1-2026',
+    category: 'security',
+    publishedAt: '2026-09-04',
+    title: {
+      en: 'Anthropic H1 2026 Transparency Report: 11.4M accounts banned; ~10.5% appeal success rate',
+      zh: 'Anthropic 2026 上半年透明度报告：封禁 1140 万账号，申诉解封率约 10.5%',
+    },
+    summary: {
+      en: 'Anthropic\'s Transparency Hub H1 2026 report shows 11.4 million policy-violating accounts disabled in six months, 398,000 appeals received, and 42,000 successful reinstatements (~10.5% success rate). Primary enforcement targets: unsupported-region access, abuse detection, multi-account bulk registration, and model distillation attacks. Disabled accounts should use the dedicated appeal form at claude.ai/restricted; API false-positive or violation warnings go to usersafety@anthropic.com.',
+      zh: 'Anthropic Transparency Hub 2026 上半年报告显示：半年内封禁 1140 万违规账号，收到 39.8 万起申诉，成功解封 4.2 万起（解封率约 10.5%）。主要风控针对：未支持地区访问、滥用检测、多账号批量注册与模型蒸馏攻击。被封账号（组织被禁用 / Disabled）需访问 claude.ai/restricted 填写官方申诉表单；API 违规警示与误判请联系 usersafety@anthropic.com。',
+    },
+    takeaway: {
+      en: 'Appeals with clear legitimate-use proof have a real chance of reinstatement — do not panic-create replacement accounts while an appeal is pending.',
+      zh: '提供合规学术/开发用途证明的申诉有明确解封概率 — 申诉期间勿慌乱重复建号。',
+    },
+    relatedGuideSlug: 'account-appeal-and-recovery-sop',
+    sourceUrl: 'https://www.anthropic.com/transparency',
+    sourceName: 'Anthropic Transparency Hub',
+  },
+  {
+    id: 'thinking-block-replay-aug-2026',
+    category: 'security',
+    publishedAt: '2026-09-01',
+    title: {
+      en: 'Accounts created after Aug 31, 2026 face stricter thinking-block replay binding',
+      zh: '2026-08-31 后新建账号限制 Thinking block 重放与上下文篡改',
+    },
+    summary: {
+      en: 'Since August 31, 2026, accounts created on or after that date are subject to tighter binding on adaptive thinking blocks across multi-turn API sessions. Replaying, reordering, or tampering with thinking blocks in stored context is treated as a distillation signal and can trigger organization-level disable. This aligns with Anthropic\'s ongoing crackdown on model distillation and automated capability extraction.',
+      zh: '自 2026 年 8 月 31 日起，该日期及之后创建的账号在多轮 API 会话中对 adaptive thinking block 执行更严格的绑定校验。重放、重排或篡改已存储上下文中的 thinking block 会被视为蒸馏信号，可能触发组织级禁用。这与 Anthropic 持续打击模型蒸馏与自动化能力提取的风控方向一致。',
+    },
+    takeaway: {
+      en: 'Never cache and replay raw thinking blocks in agent pipelines; store only final assistant text and re-derive reasoning on each turn.',
+      zh: 'Agent 流水线切勿缓存并重放原始 thinking block；仅保存最终 assistant 文本，每轮重新推理。',
+    },
+    relatedGuideSlug: 'automation-safety-practices',
+    sourceUrl: 'https://platform.claude.com/docs/en/release-notes/overview',
+    sourceName: 'Anthropic Docs',
+  },
+  {
+    id: 'claude-restricted-appeal-portal',
+    category: 'policy',
+    publishedAt: '2026-09-03',
+    title: {
+      en: 'Official disabled-account appeal portal live at claude.ai/restricted',
+      zh: '官方封号申诉专用入口 claude.ai/restricted 已启用',
+    },
+    summary: {
+      en: 'Anthropic now routes disabled-account and organization-ban appeals through a dedicated form at https://claude.ai/restricted instead of generic support tickets. The form collects account email, ban context, and usage justification. Community reports in September 2026 show successful reinstatements within 1–3 business days when appeals cite legitimate software engineering or academic use with verifiable details.',
+      zh: 'Anthropic 现已将通过 claude.ai/restricted 专用表单处理被封账号与组织禁用申诉，不再依赖通用 support ticket。表单收集账号邮箱、封禁背景与用途说明。2026 年 9 月社区反馈显示：申诉中明确陈述合法软件开发或学术用途并提供可验证细节时，1–3 个工作日内有成功解封案例。',
+    },
+    takeaway: {
+      en: 'Use claude.ai/restricted for Disabled status; reserve usersafety@anthropic.com for API-tier warnings and false positives.',
+      zh: 'Disabled 状态走 claude.ai/restricted；API 层级警示与误判走 usersafety@anthropic.com。',
+    },
+    relatedGuideSlug: 'account-appeal-and-recovery-sop',
+    sourceUrl: 'https://claude.ai/restricted',
+    sourceName: 'Anthropic',
+  },
+  {
     id: 'claude-code-managed-mcp-headless',
     category: 'product',
     publishedAt: '2026-09-02',
