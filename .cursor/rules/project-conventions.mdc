@@ -7,6 +7,7 @@ alwaysApply: true
 
 ## Tech Stack & Architecture
 - **Framework**: Astro (SSG/SSR hybrid via `@astrojs/vercel`) + TypeScript.
+- **Production Domain**: `https://fuck-claude.vercel.app` (canonical). Custom domains (`fuckclaude.tech`, `www.fuckclaude.tech`) 308 redirect to this origin.
 - **Styling**: Scoped CSS using site-wide CSS variables (`var(--surface)`, `var(--border)`, `var(--accent)`, `var(--mono)`, etc.).
 
 ## Bilingual & i18n
